@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa de Rocio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <a href="#inicio" onclick="showSection('inicio')">Inicio</a>
+            <a href="#coleccion" onclick="showSection('coleccion')">Colección</a>
+            <a href="#wishlist" onclick="showSection('wishlist')">Wishlist</a>
+            <a href="#maniqui" onclick="showSection('maniqui')">Probador</a>
+        </div>
+    </header>
+    <main>
+        <div id="inicio" class="seccion">
+            <div class="inicio-image">
+                <img src="Imagenespag/inicioimg.png" alt="Imagen Grande">
+            </div>
+            <div class="inicio-buttons">
+                <a href="#coleccion" onclick="showSection('coleccion')"><img src="Imagenespag/botoncoleccion.png" alt="Colección"></a>
+                <a href="#wishlist" onclick="showSection('wishlist')"><img src="Imagenespag/botonwishlist.png" alt="Wishlist"></a>
+                <a href="#maniqui" onclick="showSection('maniqui')"><img src="Imagenespag/botonprobador.png" alt="Probador"></a>
+            </div>
+            <div class="inicio-bottom-images">
+                <img src="Imagenespag/coleccionimg.png" alt="Imagen 1">
+                <img src="Imagenespag/wishlistimg.png" alt="Imagen 2">
+                <img src="Imagenespag/probadorimg.png" alt="Imagen 3">
+            </div>
+        </div>
+        <div id="coleccion" class="seccion">
+            <h2>Colección</h2>
+            <div id="gorras" class="ropa-seccion">
+                <h3>Gorras</h3>
+                <!-- Aquí irán los items de gorras -->
+            </div>
+            <div id="remeras" class="ropa-seccion">
+                <h3>Remeras</h3>
+                <!-- Aquí irán los items de remeras -->
+            </div>
+            <div id="camperas" class="ropa-seccion">
+                <h3>Camperas</h3>
+                <!-- Aquí irán los items de camperas -->
+            </div>
+            <div id="pantalones" class="ropa-seccion">
+                <h3>Pantalones</h3>
+                <!-- Aquí irán los items de pantalones -->
+            </div>
+            <div id="zapatillas" class="ropa-seccion">
+                <h3>Zapatillas</h3>
+                <!-- Aquí irán los items de zapatillas -->
+            </div>
+            <div id="accesorios" class="ropa-seccion">
+                <h3>Accesorios</h3>
+                <!-- Aquí irán los items de accesorios -->
+            </div>
+        </div>
+        <div id="wishlist" class="seccion" style="display:none;">
+            <h2>Wishlist</h2>
+            <div id="gorras-wishlist" class="ropa-seccion">
+                <h3>Gorras</h3>
+                <!-- Aquí irán los items de gorras de la wishlist -->
+            </div>
+            <div id="remeras-wishlist" class="ropa-seccion">
+                <h3>Remeras</h3>
+                <!-- Aquí irán los items de remeras de la wishlist -->
+            </div>
+            <div id="camperas-wishlist" class="ropa-seccion">
+                <h3>Camperas</h3>
+                <!-- Aquí irán los items de camperas de la wishlist -->
+            </div>
+            <div id="pantalones-wishlist" class="ropa-seccion">
+                <h3>Pantalones</h3>
+                <!-- Aquí irán los items de pantalones de la wishlist -->
+            </div>
+            <div id="zapatillas-wishlist" class="ropa-seccion">
+                <h3>Zapatillas</h3>
+                <!-- Aquí irán los items de zapatillas de la wishlist -->
+            </div>
+            <div id="accesorios-wishlist" class="ropa-seccion">
+                <h3>Accesorios</h3>
+                <!-- Aquí irán los items de accesorios de la wishlist -->
+            </div>
+        </div>
+        <div id="maniqui" class="seccion" style="display:none;">
+            <h2>Probador</h2>
+            <div id="doll-container">
+                <img id="doll" src="Imagenespag/maniqui.png" alt="Maniquí">
+                <div class="clothing-slot" id="gorras-slot"></div>
+                <div class="clothing-slot" id="remeras-slot"></div>
+                <div class="clothing-slot" id="camperas-slot"></div>
+                <div class="clothing-slot" id="pantalones-slot"></div>
+                <div class="clothing-slot" id="zapatillas-slot"></div>
+                <div class="clothing-slot" id="accesorios-slot"></div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
