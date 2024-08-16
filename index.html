@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+        <!-- Pantalla de carga -->
+        <div id="loading-screen">
+            <img src="Imagenespag/cargando.png" alt="Cargando...">
+        </div>
     <header>
         <div id="nav">
             <a href="#inicio" onclick="showSection('inicio')">Inicio</a>
@@ -89,6 +93,7 @@
             <h2>Probador</h2>
             <div id="doll-container">
                 <img id="doll" src="Imagenespag/maniqui.png" alt="Maniquí">
+                <div id="overlay" class="overlay"></div>
                 <div class="clothing-slot" id="gorras-slot"></div>
                 <div class="clothing-slot" id="remeras-slot"></div>
                 <div class="clothing-slot" id="camperas-slot"></div>
